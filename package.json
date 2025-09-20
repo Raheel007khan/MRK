@@ -5,3 +5,9 @@ git branch -M main
 git remote add origin https://github.com/raheel007khan/MRK.git
 git push -u origin main
 npm install gh-pages --save-dev
+"homepage": "https://raheel007khan.github.io/MRK",
+"scripts": {
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d build",
+  ...
+}
